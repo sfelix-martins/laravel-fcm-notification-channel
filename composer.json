@@ -13,10 +13,10 @@
         "email": "razumov.evgeni@gmail.com"
     }],
     "require": {
-        "php": ">=5.5.9",
-        "brozot/laravel-fcm": "dev-master",
-        "illuminate/notifications": "~5.3",
-        "illuminate/support": "~5.1"
+        "php": ">=5.6",
+        "brozot/laravel-fcm": "~1.0",
+        "illuminate/notifications": "~5.5",
+        "illuminate/support": "~5.5"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "~1.12.2",
@@ -39,6 +39,11 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "NotificationChannels\\FCM\\ServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

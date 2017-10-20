@@ -22,14 +22,28 @@ You can install this package via composer:
 ``` bash
 composer require enniel/laravel-fcm-notification-channel:1.*
 ```
-Register the provider directly in your app configuration file `config/app.php`:
+
+If you aren't using Laravel 5.5 register the provider directly in your app configuration file `config/app.php`:
+
 ``` php
 'providers' => [
     // ...
 
-    NotificationChannels\FCM\ServiceProvider::class 
+    NotificationChannels\FCM\ServiceProvider::class,
+    LaravelFCM\FCMServiceProvider::class,
 ]
 ```
+
+In your `.env` file, add the server key and the secret key for the Firebase Cloud Messaging:
+
+```php
+FCM_SERVER_KEY=my_secret_server_key
+FCM_SENDER_ID=my_secret_sender_id
+```
+
+To get these keys, you must create a new application on the [firebase cloud messaging console](https://console.firebase.google.com/).
+
+After the creation of your application on Firebase, you can find keys in `project settings -> cloud messaging`.
 
 ## Usage
 

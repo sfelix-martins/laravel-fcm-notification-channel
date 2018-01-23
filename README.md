@@ -91,6 +91,7 @@ In order for your notice to know who to send messages, you must add `routeNotifi
 - `setTimeToLive`
 - `setCollapseKey`
 - `setDelayWhileIdle`
+- `setMutableContent`
 - `setContentAvailable`
 - `setRestrictedPackageName`
 - `isDryRun`
@@ -98,6 +99,7 @@ In order for your notice to know who to send messages, you must add `routeNotifi
 - `getTimeToLive`
 - `getCollapseKey`
 - `isDelayWhileIdle`
+- `isMutableContent`
 - `isContentAvailable`
 - `getRestrictedPackageName`
 - `setTag`
@@ -107,6 +109,7 @@ In order for your notice to know who to send messages, you must add `routeNotifi
 - `setSound`
 - `setBadge`
 - `setColor`
+- `setChannelId`
 - `setClickAction`
 - `setBodyLocationKey`
 - `setBodyLocationArgs`
@@ -119,6 +122,7 @@ In order for your notice to know who to send messages, you must add `routeNotifi
 - `getSound`
 - `getBadge`
 - `getColor`
+- `getChannelId`
 - `getClickAction`
 - `getBodyLocationKey`
 - `getBodyLocationArgs`
